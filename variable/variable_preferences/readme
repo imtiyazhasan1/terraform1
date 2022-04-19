@@ -1,11 +1,14 @@
-Env Variable override variable define under variable.tf
+This file is created to understand the preferences which terraform follows
 
-terraform.tfvars variable override Environment variable and variable.tf
+#Env Variable override variable define under variable.tf
 
--var values passing the variable during run time override variable.rf, Env Variable and terraform.tfvars
 
--var 1 and -var 2 pass the SAME variable during run time then last -var values will be considered.
+#terraform.tfvars variable override Environment variable and variable.tf
 
-There is another way to place the variable under *.auto.tfvars file. If variable defines under this and also defines under terraform.tfvars then *.auto.tfvars file will override terraform.tfvars variable
+#-var values passing the variable during run time override variable.rf, Env Variable and terraform.tfvars
 
-if there are two files *.auto.tfvars which contains the same variable then value of that variable will be considered which was defined under oldest file.
+#-var 1 and -var 2 pass the SAME variable during run time then last -var values will be considered.
+
+#There is another way to place the variable under *.auto.tfvars file. If variable defines under this and also defines under terraform.tfvars then *.auto.tfvars file will override terraform.tfvars variable
+
+#if there are two files *.auto.tfvars which contains the same variable then value of that variable will be considered which was defined under oldest file.
